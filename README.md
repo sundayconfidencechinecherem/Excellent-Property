@@ -1,69 +1,60 @@
-# Excellence Estate 
 
-```markdown
-# Excellence Estate  | [Live Demo](https://excellence-estate.vercel.app)
+# Excellence Property - Real Estate App
 
-**Modern real estate platform with advanced search, virtual tours, and lead generation**
+**Modern real estate platform with advanced search and lead generation**
 
-##  Highlights
--  95% Lighthouse performance score
--  Mobile-first responsive design  
--  Professional design system
--  Advanced search & filters
+## Highlights
+- Mobile-first responsive design  
+- Professional design system
+- Advanced search & filters
+- **Tech Stack:** Next.js 14 (Pages Router) | TypeScript | Tailwind CSS
 
-##  Tech Stack
-Next.js 14 | TypeScript | Tailwind CSS | Google Maps API
+## Overview
 
-[▶️ See full documentation below...]
-```
+Excellence Property is a modern, high-performance real estate platform designed to connect potential buyers with their dream properties. Built with cutting-edge technology and user-centric design, this platform offers a seamless property search experience that stands out in the competitive real estate market.
 
-
-## Project Overview
-
-Excellence Estate is a modern, high-performance real estate platform designed to connect potential buyers with their dream properties. Built with cutting-edge technology and user-centric design, this platform offers a seamless property search experience that stands out in the competitive real estate market.
-
-###  Business Value Proposition
+### Business Value Proposition
 
 **For Home Buyers:** Find your perfect property with intuitive search, stunning visuals, and comprehensive details that make informed decisions effortless.
 
 **For Real Estate Agents:** Showcase properties with premium presentations, generate qualified leads, and provide exceptional client experiences that drive conversions.
 
-###  Core Features Delivered
+### Core Features Delivered
 
-####  **Intelligent Property Search**
+#### **Intelligent Property Search**
 - Advanced location-based search with autocomplete
 - Smart price range filtering
-- Bedroom, bathroom, and property type filters
+- Property type filters
 - Real-time search results
 
-####  **Premium Property Presentations**
+#### **Premium Property Presentations**
 - High-resolution image galleries with smooth carousels
 - Interactive virtual property tours
 - Comprehensive property details and specifications
 - Neighborhood insights and location context
 
-####  **Enhanced User Experience**
+#### **Enhanced User Experience**
 - Save favorite properties for quick access
 - Responsive design optimized for all devices
 - Fast-loading, performance-optimized pages
 - Intuitive navigation and clean interface
 
-####  **Seamless Agent Connections**
+#### **Seamless Agent Connections**
 - Direct contact forms for property inquiries
 - Professional agent information display
 - Lead capture and management system
 - Multiple contact channels
 
-####  **Location Intelligence**
+#### **Location Intelligence**
 - Interactive Google Maps integration
 - Neighborhood amenities and points of interest
 - School districts and local facilities
 - Transportation and commute information
 
-### 🛠 Technical Excellence
+### Technical Excellence
 
 #### Frontend Architecture
-- **Framework:** Next.js 14 with App Router
+- **Framework:** Next.js 14 with Pages Router
 - **Language:** TypeScript for type safety
 - **Styling:** Tailwind CSS for responsive design
 - **Performance:** Optimized images and fast loading
@@ -71,15 +62,13 @@ Excellence Estate is a modern, high-performance real estate platform designed to
 #### Key Technical Features
 - Server-side rendering for SEO optimization
 - Mobile-first responsive design
-- Accessibility compliant (WCAG 2.1)
 - Cross-browser compatibility
 
 
-<img src="/assets/images/EXCELLENT_PROPERTY_MINDMAP_visual_selection.png" alt="Excellence Property Documentation" width="600">
+<img width="1052" height="804" alt="excellent-property-mindmap-visual" src="https://github.com/user-attachments/assets/fdc480fd-2727-4e91-8ac3-f7570123fe51" />
 
-<img src="/assets/images/excellent_property_mindmap_document.png" width="600" />
 
-###  Design System
+### Design System
 
 #### Color Palette
 ```css
@@ -113,7 +102,7 @@ Excellence Estate is a modern, high-performance real estate platform designed to
 - **Cards:** White background with subtle shadows
 - **Forms:** Clean white with navy focus states
 
-###  Business Impact
+### Business Impact
 
 - **Increased Property Visibility** through professional presentations
 - **Lead Generation Optimization** with streamlined contact processes
@@ -122,7 +111,7 @@ Excellence Estate is a modern, high-performance real estate platform designed to
 
 ---
 
-##  Getting Started
+## Getting Started
 
 ### Prerequisites
 - Node.js 18.17 or later
@@ -131,10 +120,7 @@ Excellence Estate is a modern, high-performance real estate platform designed to
 ### Installation
 
 1. **Clone the repository**
-   ```bash
-   git clone https://github.com/confidence/excellence-estate.git
-   cd excellence-estate
-   ```
+  
 
 2. **Install dependencies**
    ```bash
@@ -168,18 +154,8 @@ npm run build
 npm start
 ```
 
-### Environment Setup
 
-Create a `.env.local` file in the root directory and add your environment variables:
-
-```env
-GOOGLE_MAPS_API_KEY=your_maps_api_key
-NEXT_PUBLIC_APP_URL=http://localhost:3000
-```
-
----
-
-##  Learn More
+### Learn More
 
 To learn more about the technologies used in this project:
 
@@ -187,31 +163,13 @@ To learn more about the technologies used in this project:
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs/)
 
-## 🛠 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run start` - Start production server
-- `npm run lint` - Run ESLint
-- `npm run test` - Run tests
-
-##  Deployment
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new) from the creators of Next.js.
-
-See our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-
 ---
+  
+### Author
+**Confidence Chinecherem** 
+<br>
+*Full-stack Software Developer*
 
-##  Author
+#
 
-**Confidence**  
-*Full-Stack Developer*
-
-- GitHub: [@confidence](https://github.com/confidence)
-- Email: confidence@example.com
-- Portfolio: https://confidence.dev
-
----
-
-*Excellence Estate: Where modern technology meets real estate expertise to create exceptional property search experiences.*
+*Excellence Property: Your property search buddy for excellent futures*
