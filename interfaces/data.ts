@@ -13,14 +13,13 @@ function generateSecureId(title: string): string {
 
 const propertiesWithoutIds = [
   {
-  
     title: "Luxury 5-Bedroom Villa with Pool",
     description: "Stunning modern villa with panoramic views, premium finishes, and exclusive amenities in the heart of Lekki.",
-    price: 280000,
+    price: 280000000,
     location: "Lekki Phase 1",
     neighborhood: "Lekki",
     propertyType: "villa",
-    status: "sold",
+    status: "for-sale",
     bedrooms: 5,
     bathrooms: 4,
     hasSwimmingPool: true,
@@ -44,11 +43,12 @@ const propertiesWithoutIds = [
     cautionFee: { required: true, amount: 5000000 },
     legalFee: { required: true, amount: 2000000 },
     maintenanceFee: { required: false },
-    featuredImage: "/assets/images/image1.png",
+    // 🎯 CORRECT: With properties folder
+    featuredImage: "/assets/images/properties/villa/villa1.png",
     images: [
-      "/assets/images/image1.png",
-      "/assets/images/image2.png",
-      "/assets/images/image3.png"
+      "/assets/images/properties/villa/villa2.png",
+      "/assets/images/properties/villa/villa3.png",
+      "/assets/images/properties/villa/villa4.png"
     ],
     videoTour: "/assets/videos/villa-tour.mp4",
     coordinates: { lat: 6.435, lng: 3.594 },
@@ -58,7 +58,7 @@ const propertiesWithoutIds = [
       name: "Chinonso Adebayo",
       company: "Elite Properties NG",
       phone: "+2348012345678",
-      image: "/assets/images/image2.png",
+      image: "/assets/images/agents/agent1.png",
       whatsappLink: "https://wa.me/2348012345678"
     },
     legalDocumentsAvailable: true,
@@ -70,14 +70,13 @@ const propertiesWithoutIds = [
     condition: "new"
   },
   {
-
     title: "Modern 3-Bedroom Apartment",
     description: "Fully furnished apartment with modern interiors, ideal for families looking for comfort and convenience.",
     price: 120000000,
     location: "Ikota Estate",
     neighborhood: "Lekki",
     propertyType: "apartment",
-    status: "leased",
+    status: "for-rent",
     bedrooms: 3,
     bathrooms: 3,
     hasSwimmingPool: false,
@@ -101,11 +100,12 @@ const propertiesWithoutIds = [
     cautionFee: { required: true, amount: 3000000 },
     legalFee: { required: false },
     maintenanceFee: { required: true, amount: 50000 },
-    featuredImage: "/assets/images/image4.png",
+    // 🎯 CORRECT: With properties folder
+    featuredImage: "/assets/images/properties/apartment/apartment1.png",
     images: [
-      "/assets/images/image4.png",
-      "/assets/images/image5.png",
-      "/assets/images/image6.png"
+      "/assets/images/properties/apartment/apartment2.png",
+      "/assets/images/properties/apartment/apartment3.png",
+      "/assets/images/properties/apartment/apartment4.png"
     ],
     coordinates: { lat: 6.430, lng: 3.600 },
     landmarks: ["Lekki Gardens", "Shoprite Lekki"],
@@ -114,7 +114,7 @@ const propertiesWithoutIds = [
       name: "Funke Adeyemi",
       company: "Lekki Homes",
       phone: "+2348023456789",
-      image: "/assets/images/image3.png",
+      image: "/assets/images/agents/agent2.png",
       whatsappLink: "https://wa.me/2348023456789"
     },
     legalDocumentsAvailable: true,
@@ -126,7 +126,6 @@ const propertiesWithoutIds = [
     condition: "renovated"
   },
   {
-
     title: "Executive 4-Bedroom Penthouse",
     description: "High-rise penthouse offering luxury living with breathtaking city views and premium amenities.",
     price: 320000000,
@@ -157,11 +156,12 @@ const propertiesWithoutIds = [
     cautionFee: { required: true, amount: 5000000 },
     legalFee: { required: true, amount: 2500000 },
     maintenanceFee: { required: true, amount: 100000 },
-    featuredImage: "/assets/images/image7.png",
+    // 🎯 CORRECT: With properties folder
+    featuredImage: "/assets/images/properties/penthouse/penthouse1.png",
     images: [
-      "/assets/images/image7.png",
-      "/assets/images/image8.png",
-      "/assets/images/image9.png"
+      "/assets/images/properties/penthouse/penthouse2.png",
+      "/assets/images/properties/penthouse/penthouse3.png",
+      "/assets/images/properties/penthouse/penthouse4.png"
     ],
     coordinates: { lat: 6.428, lng: 3.421 },
     landmarks: ["Lagos Marina", "Eko Hotel"],
@@ -170,7 +170,7 @@ const propertiesWithoutIds = [
       name: "Tunde Oladipo",
       company: "Prime Estates",
       phone: "+2348034567890",
-      image: "/assets/images/image4.png",
+      image: "/assets/images/agents/agent3.png",
       whatsappLink: "https://wa.me/2348034567890"
     },
     legalDocumentsAvailable: true,
@@ -182,10 +182,9 @@ const propertiesWithoutIds = [
     condition: "new"
   },
   {
-
     title: "Modern Office Space",
     description: "Spacious office with modern infrastructure, ideal for startups and corporate teams.",
-    price: 5000000,
+    price: 50000000,
     location: "Ajah",
     neighborhood: "Lagos",
     propertyType: "office",
@@ -209,15 +208,16 @@ const propertiesWithoutIds = [
     powerBackup: "inverter",
     waterSource: { available: true, type: "municipal" },
     internet: true,
-    agentFee: { required: true, amount: 150000 },
+    agentFee: { required: true, amount: 1500000 },
     cautionFee: { required: false },
     legalFee: { required: false },
     maintenanceFee: { required: true, amount: 50000 },
-    featuredImage: "/assets/images/image10.png",
+    // 🎯 CORRECT: With properties folder
+    featuredImage: "/assets/images/properties/office/office1.png",
     images: [
-      "/assets/images/image10.png",
-      "/assets/images/image11.png",
-      "/assets/images/image12.png"
+      "/assets/images/properties/office/office2.png",
+      "/assets/images/properties/office/office3.png",
+      "/assets/images/properties/office/office4.png"
     ],
     coordinates: { lat: 6.435, lng: 3.600 },
     landmarks: ["Ajah Business Hub", "Lekki Toll Gate"],
@@ -226,7 +226,7 @@ const propertiesWithoutIds = [
       name: "Bola Akindele",
       company: "OfficePro NG",
       phone: "+2348045678901",
-      image: "/assets/images/image5.png",
+      image: "/assets/images/agents/agent4.png",
       whatsappLink: "https://wa.me/2348045678901"
     },
     legalDocumentsAvailable: true,
@@ -238,7 +238,6 @@ const propertiesWithoutIds = [
     condition: "renovated"
   },
   {
-
     title: "Elegant 3-Bedroom Shortlet",
     description: "Fully furnished shortlet with all utilities included, ideal for business travelers and tourists.",
     price: 70000,
@@ -269,11 +268,12 @@ const propertiesWithoutIds = [
     cautionFee: { required: true, amount: 1500000 },
     legalFee: { required: false },
     maintenanceFee: { required: true, amount: 30000 },
-    featuredImage: "/assets/images/image13.png",
+    // 🎯 CORRECT: With properties folder
+    featuredImage: "/assets/images/properties/shortlet/shortlet1.png",
     images: [
-      "/assets/images/image13.png",
-      "/assets/images/image14.png",
-      "/assets/images/image15.png"
+      "/assets/images/properties/shortlet/shortlet2.png",
+      "/assets/images/properties/shortlet/shortlet3.png",
+      "/assets/images/properties/shortlet/shortlet4.png"
     ],
     coordinates: { lat: 6.450, lng: 3.620 },
     landmarks: ["VGC Mall", "Lekki Phase 2"],
@@ -282,7 +282,7 @@ const propertiesWithoutIds = [
       name: "Ngozi Chukwu",
       company: "Lekki Shortlets",
       phone: "+2348056789012",
-      image: "/assets/images/image6.png",
+      image: "/assets/images/agents/agent1.png",
       whatsappLink: "https://wa.me/2348056789012"
     },
     legalDocumentsAvailable: true,
@@ -292,235 +292,8 @@ const propertiesWithoutIds = [
       { rating: 5, text: "Great shortlet, very comfortable.", date: "2025-11-02", reviewer: "Adaeze N." }
     ],
     condition: "new"
-  },
-    {
-
-    title: "Spacious 4-Bedroom Duplex",
-    description: "Modern duplex with large living spaces, private garden, and excellent security in a serene neighborhood.",
-    price: 180000000,
-    location: "Ajah Phase 2",
-    neighborhood: "Ajah",
-    propertyType: "duplex",
-    status: "for-sale",
-    bedrooms: 4,
-    bathrooms: 3,
-    hasSwimmingPool: false,
-    hasGarden: true,
-    hasParking: true,
-    parkingSpaces: 3,
-    squareFeet: 3200,
-    hasGym: false,
-    hasConcierge: false,
-    hasSecurity: true,
-    yearBuilt: 2017,
-    totalUnits: 2,
-    furnishing: "semi-furnished",
-    hasBalcony: true,
-    hasAirConditioning: true,
-    hasWardrobes: true,
-    powerBackup: "inverter",
-    waterSource: { available: true, type: "municipal" },
-    internet: true,
-    agentFee: { required: true, amount: 5400000 },
-    cautionFee: { required: true, amount: 2000000 },
-    legalFee: { required: false },
-    maintenanceFee: { required: true, amount: 40000 },
-    featuredImage: "/assets/images/image16.png",
-    images: [
-      "/assets/images/image16.png",
-      "/assets/images/image17.png",
-      "/assets/images/image18.png"
-    ],
-    coordinates: { lat: 6.440, lng: 3.615 },
-    landmarks: ["Ajah Market", "Lekki Free Trade Zone"],
-    nearbyAmenities: ["School", "Hospital", "Shopping Mall"],
-    agent: {
-      name: "Chuka Nwankwo",
-      company: "HomeNest NG",
-      phone: "+2348067890123",
-      image: "/assets/images/image2.png",
-      whatsappLink: "https://wa.me/2348067890123"
-    },
-    legalDocumentsAvailable: true,
-    surveyPlans: { available: true },
-    relatedProperties: [],
-    reviews: [
-      { rating: 4, text: "Good value for a duplex, quiet area.", date: "2025-10-20", reviewer: "Confidence C." }
-    ],
-    condition: "renovated"
-  },
-  {
-
-    title: "Luxury 3-Bedroom Bungalow",
-    description: "Elegant bungalow with modern finishes, spacious living areas, and private garden for family comfort.",
-    price: 150000000,
-    location: "Ikoyi",
-    neighborhood: "Lagos Island",
-    propertyType: "bungalow",
-    status: "for-sale",
-    bedrooms: 3,
-    bathrooms: 3,
-    hasSwimmingPool: true,
-    hasGarden: true,
-    hasParking: true,
-    parkingSpaces: 2,
-    squareFeet: 2200,
-    hasGym: false,
-    hasConcierge: false,
-    hasSecurity: true,
-    yearBuilt: 2016,
-    totalUnits: 1,
-    furnishing: "furnished",
-    hasBalcony: false,
-    hasAirConditioning: true,
-    hasWardrobes: true,
-    powerBackup: "generator",
-    waterSource: { available: true, type: "borehole" },
-    internet: true,
-    agentFee: { required: true, amount: 4500000 },
-    cautionFee: { required: true, amount: 1500000 },
-    legalFee: { required: true, amount: 1200000 },
-    maintenanceFee: { required: false },
-    featuredImage: "/assets/images/image19.png",
-    images: [
-      "/assets/images/image19.png",
-      "/assets/images/image20.png",
-      "/assets/images/image21.png"
-    ],
-    coordinates: { lat: 6.425, lng: 3.420 },
-    landmarks: ["Ikoyi Golf Club", "Top City Mall"],
-    nearbyAmenities: ["School", "Hospital", "Shopping Mall", "Bus Stop"],
-    agent: {
-      name: "Chinedu Obi",
-      company: "Prestige Homes NG",
-      phone: "+2348078901234",
-      image: "/assets/images/image3.png",
-      whatsappLink: "https://wa.me/2348078901234"
-    },
-    legalDocumentsAvailable: true,
-    surveyPlans: { available: true },
-    relatedProperties: [],
-    reviews: [
-      { rating: 5, text: "Beautiful bungalow, very cozy.", date: "2025-11-03", reviewer: "Adaeze N." }
-    ],
-    condition: "renovated"
-  },
-  {
-
-    title: "High-End Shortlet Apartment",
-    description: "Fully equipped shortlet apartment with modern amenities and prime location, perfect for short-term stays.",
-    price: 8000000,
-    location: "Victoria Island",
-    neighborhood: "Lagos Island",
-    propertyType: "shortlet",
-    status: "for-rent",
-    bedrooms: 2,
-    bathrooms: 2,
-    hasSwimmingPool: false,
-    hasGarden: false,
-    hasParking: true,
-    parkingSpaces: 1,
-    squareFeet: 1000,
-    hasGym: false,
-    hasConcierge: true,
-    hasSecurity: true,
-    yearBuilt: 2023,
-    totalUnits: 5,
-    furnishing: "furnished",
-    hasBalcony: true,
-    hasAirConditioning: true,
-    hasWardrobes: true,
-    powerBackup: "solar",
-    waterSource: { available: true, type: "both" },
-    internet: true,
-    agentFee: { required: false },
-    cautionFee: { required: false },
-    legalFee: { required: false },
-    maintenanceFee: { required: true, amount: 20000 },
-    featuredImage: "/assets/images/image21.png",
-    images: [
-      "/assets/images/image21.png",
-      "/assets/images/image16.png",
-      "/assets/images/image17.png"
-    ],
-    coordinates: { lat: 6.427, lng: 3.428 },
-    landmarks: ["Victoria Island Business Hub", "Eko Hotel"],
-    nearbyAmenities: ["School", "Hospital", "Shopping Mall", "Airport Access"],
-    agent: {
-      name: "Amaka Eze",
-      company: "Shortlet Experts",
-      phone: "+2348089012345",
-      image: "/assets/images/image4.png",
-      whatsappLink: "https://wa.me/2348089012345"
-    },
-    legalDocumentsAvailable: false,
-    surveyPlans: { available: false },
-    relatedProperties: [],
-    reviews: [
-      { rating: 4, text: "Convenient shortlet with all essentials.", date: "2025-11-06", reviewer: "Confidence C." }
-    ],
-    condition: "new"
-  },
-  {
-
-    title: "High-End Shortlet Apartment",
-    description: "Fully equipped shortlet apartment with modern amenities and prime location, perfect for short-term stays.",
-    price: 8000000,
-    location: "Victoria Island",
-    neighborhood: "Lagos Island",
-    propertyType: "shortlet",
-    status: "for-rent",
-    bedrooms: 2,
-    bathrooms: 2,
-    hasSwimmingPool: false,
-    hasGarden: false,
-    hasParking: true,
-    parkingSpaces: 1,
-    squareFeet: 1000,
-    hasGym: false,
-    hasConcierge: true,
-    hasSecurity: true,
-    yearBuilt: 2023,
-    totalUnits: 5,
-    furnishing: "furnished",
-    hasBalcony: true,
-    hasAirConditioning: true,
-    hasWardrobes: true,
-    powerBackup: "solar",
-    waterSource: { available: true, type: "both" },
-    internet: true,
-    agentFee: { required: false },
-    cautionFee: { required: false },
-    legalFee: { required: false },
-    maintenanceFee: { required: true, amount: 20000 },
-    featuredImage: "/assets/images/image21.png",
-    images: [
-      "/assets/images/image21.png",
-      "/assets/images/image16.png",
-      "/assets/images/image17.png"
-    ],
-    coordinates: { lat: 6.427, lng: 3.428 },
-    landmarks: ["Victoria Island Business Hub", "Eko Hotel"],
-    nearbyAmenities: ["School", "Hospital", "Shopping Mall", "Airport Access"],
-    agent: {
-      name: "Amaka Eze",
-      company: "Shortlet Experts",
-      phone: "+2348089012345",
-      image: "/assets/images/image4.png",
-      whatsappLink: "https://wa.me/2348089012345"
-    },
-    legalDocumentsAvailable: false,
-    surveyPlans: { available: false },
-    relatedProperties: [],
-    reviews: [
-      { rating: 4, text: "Convenient shortlet with all essentials.", date: "2025-11-06", reviewer: "Confidence C." }
-    ],
-    condition: "new"
-  },
+  }
 ];
-
-
-
 
 export const propertyFeatures: PropertyProps[] = propertiesWithoutIds.map(property => ({
   id: generateSecureId(property.title),

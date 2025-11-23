@@ -84,9 +84,68 @@ const generateAltText = (property: PropertyProps): string => {
 
 // Status badge component
 const StatusBadge = ({ status }: { status: PropertyProps['status'] }) => {
-  const cfg = STATUS_CONFIG[status];
+  // Comprehensive error handling with multiple fallbacks
+  const getStatusConfig = (): { color: string; textColor: string; label: string } => {
+    // 1. Check if status is valid
+    if (!status || typeof status !== 'string') {
+      console.warn('Invalid status provided to StatusBadge:', status);
+      return {
+        color: 'bg-gray-100',
+        textColor: 'text-gray-800', 
+        label: 'Unknown Status'
+      };
+    }
+
+    // 2. Check if status exists in config
+    const config = STATUS_CONFIG[status];
+    if (!config) {
+      console.warn(`Status "${status}" not found in STATUS_CONFIG. Available:`, Object.keys(STATUS_CONFIG));
+      
+      // 3. Smart fallback based on status content
+      if (status.includes('sale') || status.includes('sell')) {
+        return {
+          color: 'bg-green-100',
+          textColor: 'text-green-800',
+          label: 'For Sale'
+        };
+      } else if (status.includes('rent') || status.includes('lease')) {
+        return {
+          color: 'bg-blue-100', 
+          textColor: 'text-blue-800',
+          label: 'For Rent'
+        };
+      } else if (status.includes('sold')) {
+        return {
+          color: 'bg-gray-200',
+          textColor: 'text-gray-800',
+          label: 'Sold'
+        };
+      }
+      
+      // 4. Generic fallback with formatted label
+      return {
+        color: 'bg-gray-100',
+        textColor: 'text-gray-800',
+        label: status.replace(/-/g, ' ').toUpperCase()
+      };
+    }
+
+    return config;
+  };
+
+  const cfg = getStatusConfig();
+
   return (
-    <span className={clsx('inline-block text-sm py-1.5 px-3 font-medium rounded-full', cfg.color, cfg.textColor)}>
+    <span 
+      className={clsx(
+        'inline-block text-sm py-1.5 px-3 font-medium rounded-full border',
+        cfg.color, 
+        cfg.textColor,
+        'border-opacity-20'
+      )}
+      title={`Status: ${cfg.label}`}
+      aria-label={`Property status: ${cfg.label}`}
+    >
       {cfg.label}
     </span>
   );

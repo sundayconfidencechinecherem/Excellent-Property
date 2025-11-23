@@ -8,7 +8,7 @@ function Footer() {
         <div className='grid grid-cols-1 md:grid-cols-3 gap-8 container mx-auto'>
             <div className='container mx-auto px-4 py-6'>
             <figure>
-                <Image src={'/assets/images/logo.png'} width={100} height={100} alt='logo' />
+                <Image src={'/assets/images/logo/logo.png'} className="object-contain" width={53}  height={20} alt="Excellent Properties - Premium Real Estate Company" />
             </figure>
             <p>Excellence Property: Your property search buddy for excellent futures</p>
             <div className='flex space-x-3 mt-4'>

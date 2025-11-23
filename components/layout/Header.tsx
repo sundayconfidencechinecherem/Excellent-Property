@@ -12,7 +12,7 @@ function Header() {
                <div className='flex justify-between bg-blue-200 items-center py-4 px-6'>
                     {/* desktop view */}
                     <ActiveLink href='/' className='hover:text-red-500 transition-colors'>
-                    <Image src={'/assets/images/logo.png'} width={50}  height={50} alt='logo'/>
+                    <Image src={'/assets/images/logo/logo.png'} className="object-contain" width={53}  height={20} alt="Excellent Properties - Premium Real Estate Company" />
                     </ActiveLink>
                     <ul className='hidden md:flex gap-4'>
                         <li><ActiveLink href='/properties' className='hover:text-red-500 transition-colors'>Properties</ActiveLink></li>
