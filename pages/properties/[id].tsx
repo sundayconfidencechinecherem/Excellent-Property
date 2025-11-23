@@ -95,7 +95,7 @@ function PropertyDetailsPage({ propertyData }: PropertyPageProps) {
                 {/* Main Image Container */}
                 <div className="relative w-full max-w-4xl mx-auto mb-6">
                     {/* Image with enforced aspect ratio */}
-                    <div className="relative aspect-[4/3] w-full bg-gray-50 rounded-lg overflow-hidden shadow-lg">
+                    <div className="relative aspect-4/3 w-full bg-gray-50 rounded-lg overflow-hidden shadow-lg">
                         <Image 
                             src={allImages[currentImageIndex]} 
                             fill
@@ -159,8 +159,6 @@ function PropertyDetailsPage({ propertyData }: PropertyPageProps) {
               alt={`Thumbnail ${index + 1}`}  
               className='object-cover rounded-md'
               sizes="80px"
-              onLoad={() => console.log(`✅ Thumbnail ${index} loaded: ${imageUrl}`)}
-              onError={(e) => console.log(`❌ Thumbnail ${index} failed: ${imageUrl}`)}
             />
             {currentImageIndex === index && (
               <div className="absolute -top-1 -right-1 w-3 h-3 bg-blue-500 rounded-full border-2 border-white" />
